@@ -19,10 +19,10 @@ program the microcontroller on a different Nucleo board.
    for an illustration):
     * Host CN8-11 to target CN8-11 (GND, brown)
     * Host CN8-9 to target CN8-9 (5V, red)
-    * Host CN5-2 to target CN4-2 (SWCLK, gray)
+    * Host CN5-5 to target JP3-2 (NRST, purple)
+    * Host CN5-4 to target CN4-4 (SWDIO, gray)
     * Host CN5-3 to target CN5-3 (GND, white)
-    * Host CN5-4 to target CN4-4 (SWDIO, black)
-    * Host CN5-5 to target JP3-2 (NRST, purple; currently missing from the wiring diagram)
+    * Host CN5-2 to target CN4-2 (SWCLK, black)
 4. Open the E001-blinks project using PlatformIO in Visual Studio Code.
 5. Connect the host end of the USB cable to your PC, and the device end to the
    host board's ST-LINK USB connector CN1 (**not** the user USB connector CN14).

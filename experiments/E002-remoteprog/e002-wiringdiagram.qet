@@ -1,45 +1,45 @@
-<project title="wiringdiagram" version="0.90">
+<project version="0.90" title="wiringdiagram">
     <properties>
-        <property show="1" name="saveddate-us">2023-11-17</property>
+        <property show="1" name="savedfilename">e002-wiringdiagram</property>
+        <property show="1" name="saveddate-eu">17-11-2023</property>
         <property show="1" name="savedfilepath">C:/Users/tanne/Documents/software/clawtoast/experiments/E002-remoteprog/e002-wiringdiagram.qet</property>
         <property show="1" name="saveddate">11/17/2023</property>
-        <property show="1" name="savedfilename">e002-wiringdiagram</property>
-        <property show="1" name="savedtime">14:39</property>
-        <property show="1" name="saveddate-eu">17-11-2023</property>
+        <property show="1" name="saveddate-us">2023-11-17</property>
+        <property show="1" name="savedtime">16:44</property>
     </properties>
     <newdiagrams>
-        <border displaycols="true" colsize="60" displayrows="true" rows="8" cols="17" rowsize="80"/>
-        <inset displayAt="bottom" indexrev="" auto_page_num="" title="" filename="" folio="%id/%total" locmach="" author="" version="" plant="" date="null"/>
-        <conductors type="multi" conductor_color="" numsize="7" color2="#000000" tension_protocol="" dash-size="1" conductor_section="" vertirotatetext="270" text_color="#000000" onetextperfolio="0" cable="" function="" bicolor="false" bus="" horizrotatetext="0" vertical-alignment="AlignRight" displaytext="1" condsize="1" horizontal-alignment="AlignBottom" formula="" num="_"/>
+        <border rowsize="80" cols="17" displayrows="true" displaycols="true" colsize="60" rows="8"/>
+        <inset author="" auto_page_num="" plant="" filename="" locmach="" folio="%id/%total" indexrev="" displayAt="bottom" version="" date="null" title=""/>
+        <conductors conductor_section="" dash-size="1" displaytext="1" bicolor="false" onetextperfolio="0" color2="#000000" numsize="7" num="_" vertical-alignment="AlignRight" bus="" horizrotatetext="0" conductor_color="" horizontal-alignment="AlignBottom" text_color="#000000" tension_protocol="" function="" condsize="1" type="multi" formula="" cable="" vertirotatetext="270"/>
         <report label="%f-%l%c"/>
         <xrefs>
-            <xref type="coil" delayprefix="" showpowerctc="true" offset="0" slave_label="(%f-%l%c)" master_label="%f-%l%c" displayhas="cross" xrefpos="" powerprefix="" snapto="label" switchprefix=""/>
-            <xref type="commutator" delayprefix="" showpowerctc="true" offset="0" slave_label="(%f-%l%c)" master_label="%f-%l%c" displayhas="cross" xrefpos="" powerprefix="" snapto="label" switchprefix=""/>
-            <xref type="protection" delayprefix="" showpowerctc="true" offset="0" slave_label="(%f-%l%c)" master_label="%f-%l%c" displayhas="cross" xrefpos="" powerprefix="" snapto="label" switchprefix=""/>
+            <xref displayhas="cross" type="commutator" offset="0" showpowerctc="true" xrefpos="" delayprefix="" slave_label="(%f-%l%c)" snapto="label" master_label="%f-%l%c" switchprefix="" powerprefix=""/>
+            <xref displayhas="cross" type="coil" offset="0" showpowerctc="true" xrefpos="" delayprefix="" slave_label="(%f-%l%c)" snapto="label" master_label="%f-%l%c" switchprefix="" powerprefix=""/>
+            <xref displayhas="cross" type="protection" offset="0" showpowerctc="true" xrefpos="" delayprefix="" slave_label="(%f-%l%c)" snapto="label" master_label="%f-%l%c" switchprefix="" powerprefix=""/>
         </xrefs>
-        <conductors_autonums current_autonum="" freeze_new_conductors="false"/>
+        <conductors_autonums freeze_new_conductors="false" current_autonum=""/>
         <folio_autonums/>
         <element_autonums freeze_new_elements="false" current_autonum=""/>
     </newdiagrams>
-    <diagram date="null" filename="e002-wiringdiagram.qet" locmach="" version="0.90+c7891bc4cb0a58100c957a06d79751d3" freezeNewConductor="false" rows="8" freezeNewElement="false" displaycols="true" colsize="60" folio="%id/%total" indexrev="" cols="17" plant="" displayAt="bottom" displayrows="true" title="" author="" auto_page_num="Create an auto folio numbering" rowsize="80" height="660" order="1">
-        <defaultconductor type="multi" conductor_color="" numsize="7" color2="#000000" tension_protocol="" dash-size="2" conductor_section="" vertirotatetext="270" text_color="#000000" onetextperfolio="0" cable="" function="" bicolor="false" horizrotatetext="0" bus="" vertical-alignment="AlignRight" displaytext="1" condsize="1" horizontal-alignment="AlignBottom" formula="" num="_"/>
+    <diagram filename="e002-wiringdiagram.qet" colsize="60" plant="" version="0.90+c7891bc4cb0a58100c957a06d79751d3" rowsize="80" displayrows="true" rows="8" indexrev="" order="1" auto_page_num="Create an auto folio numbering" freezeNewConductor="false" cols="17" displaycols="true" height="660" title="" date="null" displayAt="bottom" author="" locmach="" folio="%id/%total" freezeNewElement="false">
+        <defaultconductor conductor_section="" dash-size="2" displaytext="1" bicolor="false" onetextperfolio="0" color2="#000000" numsize="7" num="_" vertical-alignment="AlignRight" bus="" horizrotatetext="0" horizontal-alignment="AlignBottom" conductor_color="" text_color="#000000" tension_protocol="" function="" condsize="1" type="multi" formula="" cable="" vertirotatetext="270"/>
         <elements>
-            <element type="embed://import/nucleo-v2.elmt" freezeLabel="false" uuid="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" x="170" z="10" y="150" orientation="0" prefix="">
+            <element y="150" z="10" type="embed://import/nucleo-v2.elmt" uuid="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" prefix="" x="170" orientation="0" freezeLabel="false">
                 <terminals>
-                    <terminal id="0" x="-39" y="-15" orientation="1"/>
-                    <terminal id="1" x="-39" y="-5" orientation="1"/>
-                    <terminal id="2" x="-39" y="5" orientation="1"/>
-                    <terminal id="3" x="-39" y="15" orientation="1"/>
-                    <terminal id="4" x="-39" y="25" orientation="1"/>
-                    <terminal id="5" x="-39" y="35" orientation="1"/>
-                    <terminal id="6" x="-29" y="125" orientation="1"/>
-                    <terminal id="7" x="-29" y="135" orientation="1"/>
-                    <terminal id="8" x="-29" y="145" orientation="1"/>
-                    <terminal id="9" x="-29" y="155" orientation="1"/>
-                    <terminal id="10" x="-29" y="165" orientation="1"/>
-                    <terminal id="11" x="-29" y="175" orientation="1"/>
-                    <terminal id="12" x="-29" y="185" orientation="1"/>
-                    <terminal id="13" x="-29" y="195" orientation="1"/>
+                    <terminal y="-15" id="0" x="-39" orientation="1"/>
+                    <terminal y="-5" id="1" x="-39" orientation="1"/>
+                    <terminal y="5" id="2" x="-39" orientation="1"/>
+                    <terminal y="15" id="3" x="-39" orientation="1"/>
+                    <terminal y="25" id="4" x="-39" orientation="1"/>
+                    <terminal y="35" id="5" x="-39" orientation="1"/>
+                    <terminal y="125" id="6" x="-29" orientation="1"/>
+                    <terminal y="135" id="7" x="-29" orientation="1"/>
+                    <terminal y="145" id="8" x="-29" orientation="1"/>
+                    <terminal y="155" id="9" x="-29" orientation="1"/>
+                    <terminal y="165" id="10" x="-29" orientation="1"/>
+                    <terminal y="175" id="11" x="-29" orientation="1"/>
+                    <terminal y="185" id="12" x="-29" orientation="1"/>
+                    <terminal y="195" id="13" x="-29" orientation="1"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -48,26 +48,28 @@
                 <dynamic_texts/>
                 <texts_groups/>
             </element>
-            <element type="embed://import/nucleo-v1.elmt" freezeLabel="false" uuid="{2136c44d-d097-48b0-bf28-1d0d29462acc}" x="800" z="10" y="150" orientation="0" prefix="">
+            <element y="150" z="10" type="embed://import/nucleo-v1.elmt" uuid="{2136c44d-d097-48b0-bf28-1d0d29462acc}" prefix="" x="800" orientation="0" freezeLabel="false">
                 <terminals>
-                    <terminal id="14" x="1" y="-35" orientation="1"/>
-                    <terminal id="15" x="1" y="-25" orientation="1"/>
-                    <terminal id="16" x="-31" y="-15" orientation="3"/>
-                    <terminal id="17" x="1" y="-15" orientation="1"/>
-                    <terminal id="18" x="-31" y="-5" orientation="3"/>
-                    <terminal id="19" x="1" y="-5" orientation="1"/>
-                    <terminal id="20" x="-31" y="5" orientation="3"/>
-                    <terminal id="21" x="-31" y="15" orientation="3"/>
-                    <terminal id="22" x="-31" y="25" orientation="3"/>
-                    <terminal id="23" x="-31" y="35" orientation="3"/>
-                    <terminal id="24" x="-21" y="125" orientation="3"/>
-                    <terminal id="25" x="-21" y="135" orientation="3"/>
-                    <terminal id="26" x="-21" y="145" orientation="3"/>
-                    <terminal id="27" x="-21" y="155" orientation="3"/>
-                    <terminal id="28" x="-21" y="165" orientation="3"/>
-                    <terminal id="29" x="-21" y="175" orientation="3"/>
-                    <terminal id="30" x="-21" y="185" orientation="3"/>
-                    <terminal id="31" x="-21" y="195" orientation="3"/>
+                    <terminal y="-35" id="14" x="1" orientation="1"/>
+                    <terminal y="-25" id="15" x="1" orientation="1"/>
+                    <terminal y="-15" id="16" x="-31" orientation="3"/>
+                    <terminal y="-15" id="17" x="1" orientation="1"/>
+                    <terminal y="-5" id="18" x="-31" orientation="3"/>
+                    <terminal y="-5" id="19" x="1" orientation="1"/>
+                    <terminal y="5" id="20" x="-31" orientation="3"/>
+                    <terminal y="15" id="21" x="-31" orientation="3"/>
+                    <terminal y="25" id="22" x="-31" orientation="3"/>
+                    <terminal y="25" id="23" x="-19" orientation="1"/>
+                    <terminal y="35" id="24" x="-31" orientation="3"/>
+                    <terminal y="35" id="25" x="-19" orientation="1"/>
+                    <terminal y="125" id="26" x="-21" orientation="3"/>
+                    <terminal y="135" id="27" x="-21" orientation="3"/>
+                    <terminal y="145" id="28" x="-21" orientation="3"/>
+                    <terminal y="155" id="29" x="-21" orientation="3"/>
+                    <terminal y="165" id="30" x="-21" orientation="3"/>
+                    <terminal y="175" id="31" x="-21" orientation="3"/>
+                    <terminal y="185" id="32" x="-21" orientation="3"/>
+                    <terminal y="195" id="33" x="-21" orientation="3"/>
                 </terminals>
                 <inputs/>
                 <elementInformations>
@@ -78,44 +80,55 @@
             </element>
         </elements>
         <conductors>
-            <conductor terminal1="{04b9c83a-fc82-4e5c-9261-b370ba009f6b}" userx="160" type="multi" conductor_color="" numsize="7" color2="#000000" tension_protocol="" dash-size="1" freezeLabel="false" conductor_section="" vertirotatetext="270" text_color="#000000" terminal2="{fe06c0d8-b9ce-4f2b-9703-36356bda6bfc}" onetextperfolio="0" cable="" function="" bicolor="false" x="0" element1="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" element2="{2136c44d-d097-48b0-bf28-1d0d29462acc}" bus="" horizrotatetext="0" vertical-alignment="AlignRight" usery="130" condsize="1" displaytext="1" horizontal-alignment="AlignBottom" formula="SWCLK - GRY" num="SWCLK - GRY" y="0">
-                <segment orientation="horizontal" length="41.75"/>
-                <segment orientation="horizontal" length="433.25"/>
-                <segment orientation="vertical" length="-85"/>
-                <segment orientation="horizontal" length="287.5"/>
-                <segment orientation="vertical" length="65"/>
-                <segment orientation="horizontal" length="-92.5"/>
-                <segment orientation="horizontal" length="0"/>
+            <conductor conductor_section="" dash-size="1" displaytext="1" bicolor="false" freezeLabel="false" userx="170" onetextperfolio="0" color2="#000000" x="0" terminal2="{7f58b12a-61fd-4f8d-b492-0fdbb659a7f9}" numsize="7" num="5V - RED" element2="{2136c44d-d097-48b0-bf28-1d0d29462acc}" vertical-alignment="AlignRight" bus="" horizrotatetext="0" conductor_color="" horizontal-alignment="AlignBottom" y="0" element1="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" text_color="#000000" function="" tension_protocol="" terminal1="{7f58b12a-61fd-4f8d-b492-0fdbb659a7f9}" usery="300" condsize="1" type="multi" formula="5V - RED" cable="" vertirotatetext="270">
                 <sequentialNumbers/>
             </conductor>
-            <conductor terminal1="{eb77f16f-69fb-406f-a2e6-888303e66a81}" userx="160" type="multi" conductor_color="" numsize="7" color2="#000000" tension_protocol="" dash-size="1" freezeLabel="false" conductor_section="" vertirotatetext="270" text_color="#000000" terminal2="{405e97bb-681a-425c-8598-0085e490d9bb}" onetextperfolio="0" cable="" function="" bicolor="false" x="0" element1="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" element2="{2136c44d-d097-48b0-bf28-1d0d29462acc}" bus="" horizrotatetext="0" vertical-alignment="AlignRight" usery="150" condsize="1" displaytext="1" horizontal-alignment="AlignBottom" formula="SWDIO - BLK" num="SWDIO - BLK" y="0">
-                <segment orientation="horizontal" length="41.75"/>
-                <segment orientation="horizontal" length="443.25"/>
-                <segment orientation="vertical" length="-95"/>
-                <segment orientation="horizontal" length="287.5"/>
-                <segment orientation="vertical" length="75"/>
-                <segment orientation="horizontal" length="-102.5"/>
-                <segment orientation="horizontal" length="0"/>
+            <conductor conductor_section="" dash-size="1" displaytext="1" bicolor="false" freezeLabel="false" userx="160" onetextperfolio="0" color2="#000000" x="0" terminal2="{fe06c0d8-b9ce-4f2b-9703-36356bda6bfc}" numsize="7" num="SWCLK - BLK" element2="{2136c44d-d097-48b0-bf28-1d0d29462acc}" vertical-alignment="AlignRight" bus="" horizrotatetext="0" conductor_color="" horizontal-alignment="AlignBottom" y="0" element1="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" text_color="#000000" function="" tension_protocol="" terminal1="{04b9c83a-fc82-4e5c-9261-b370ba009f6b}" usery="130" condsize="1" type="multi" formula="SWCLK - BLK" cable="" vertirotatetext="270">
+                <segment length="41.75" orientation="horizontal"/>
+                <segment length="433.25" orientation="horizontal"/>
+                <segment length="-85" orientation="vertical"/>
+                <segment length="287.5" orientation="horizontal"/>
+                <segment length="65" orientation="vertical"/>
+                <segment length="-92.5" orientation="horizontal"/>
+                <segment length="0" orientation="horizontal"/>
                 <sequentialNumbers/>
             </conductor>
-            <conductor terminal1="{daec4b55-c86d-4c71-859a-e25f793af908}" userx="170" type="multi" conductor_color="" numsize="7" color2="#000000" tension_protocol="" dash-size="1" freezeLabel="false" conductor_section="" vertirotatetext="270" text_color="#000000" terminal2="{daec4b55-c86d-4c71-859a-e25f793af908}" onetextperfolio="0" cable="" function="" bicolor="false" x="0" element1="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" element2="{2136c44d-d097-48b0-bf28-1d0d29462acc}" bus="" horizrotatetext="0" vertical-alignment="AlignRight" usery="310" condsize="1" displaytext="1" horizontal-alignment="AlignBottom" formula="GND - BRN" num="GND - BRN" y="0">
+            <conductor conductor_section="" dash-size="1" displaytext="1" bicolor="false" freezeLabel="false" userx="160" onetextperfolio="0" color2="#000000" x="0" terminal2="{5f3f65eb-15a7-43f8-9967-6c90e9042b4d}" numsize="7" num="GND - WHT" element2="{2136c44d-d097-48b0-bf28-1d0d29462acc}" vertical-alignment="AlignRight" bus="" horizrotatetext="0" conductor_color="" horizontal-alignment="AlignBottom" y="0" element1="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" text_color="#000000" function="" tension_protocol="" terminal1="{5f3f65eb-15a7-43f8-9967-6c90e9042b4d}" usery="140" condsize="1" type="multi" formula="GND - WHT" cable="" vertirotatetext="270">
                 <sequentialNumbers/>
             </conductor>
-            <conductor terminal1="{7f58b12a-61fd-4f8d-b492-0fdbb659a7f9}" userx="170" type="multi" conductor_color="" numsize="7" color2="#000000" tension_protocol="" dash-size="1" freezeLabel="false" conductor_section="" vertirotatetext="270" text_color="#000000" terminal2="{7f58b12a-61fd-4f8d-b492-0fdbb659a7f9}" onetextperfolio="0" cable="" function="" bicolor="false" x="0" element1="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" element2="{2136c44d-d097-48b0-bf28-1d0d29462acc}" bus="" horizrotatetext="0" vertical-alignment="AlignRight" usery="300" condsize="1" displaytext="1" horizontal-alignment="AlignBottom" formula="5V - RED" num="5V - RED" y="0">
+            <conductor conductor_section="" dash-size="1" displaytext="1" bicolor="false" freezeLabel="false" userx="170" onetextperfolio="0" color2="#000000" x="0" terminal2="{daec4b55-c86d-4c71-859a-e25f793af908}" numsize="7" num="GND - BRN" element2="{2136c44d-d097-48b0-bf28-1d0d29462acc}" vertical-alignment="AlignRight" bus="" horizrotatetext="0" conductor_color="" horizontal-alignment="AlignBottom" y="0" element1="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" text_color="#000000" function="" tension_protocol="" terminal1="{daec4b55-c86d-4c71-859a-e25f793af908}" usery="310" condsize="1" type="multi" formula="GND - BRN" cable="" vertirotatetext="270">
                 <sequentialNumbers/>
             </conductor>
-            <conductor terminal1="{5f3f65eb-15a7-43f8-9967-6c90e9042b4d}" userx="160" type="multi" conductor_color="" numsize="7" color2="#000000" tension_protocol="" dash-size="1" freezeLabel="false" conductor_section="" vertirotatetext="270" text_color="#000000" terminal2="{5f3f65eb-15a7-43f8-9967-6c90e9042b4d}" onetextperfolio="0" cable="" function="" bicolor="false" x="0" element1="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" element2="{2136c44d-d097-48b0-bf28-1d0d29462acc}" bus="" horizrotatetext="0" vertical-alignment="AlignRight" usery="140" condsize="1" displaytext="1" horizontal-alignment="AlignBottom" formula="GND - WHT" num="GND - WHT" y="0">
+            <conductor conductor_section="" dash-size="1" displaytext="1" bicolor="false" freezeLabel="false" userx="160" onetextperfolio="0" color2="#000000" x="0" terminal2="{405e97bb-681a-425c-8598-0085e490d9bb}" numsize="7" num="SWDIO - GRY" element2="{2136c44d-d097-48b0-bf28-1d0d29462acc}" vertical-alignment="AlignRight" bus="" horizrotatetext="0" conductor_color="" horizontal-alignment="AlignBottom" y="0" element1="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" text_color="#000000" function="" tension_protocol="" terminal1="{eb77f16f-69fb-406f-a2e6-888303e66a81}" usery="150" condsize="1" type="multi" formula="SWDIO - GRY" cable="" vertirotatetext="270">
+                <segment length="41.75" orientation="horizontal"/>
+                <segment length="443.25" orientation="horizontal"/>
+                <segment length="-95" orientation="vertical"/>
+                <segment length="287.5" orientation="horizontal"/>
+                <segment length="75" orientation="vertical"/>
+                <segment length="-102.5" orientation="horizontal"/>
+                <segment length="0" orientation="horizontal"/>
+                <sequentialNumbers/>
+            </conductor>
+            <conductor conductor_section="" dash-size="2" displaytext="1" bicolor="false" freezeLabel="false" userx="160" onetextperfolio="0" color2="#000000" x="0" terminal2="{4c2b467b-73ce-41c9-93aa-348065df273a}" numsize="7" num="NRST - PUR" element2="{2136c44d-d097-48b0-bf28-1d0d29462acc}" vertical-alignment="AlignRight" bus="" horizrotatetext="0" conductor_color="" horizontal-alignment="AlignBottom" y="0" element1="{97560a1e-2b72-4ce7-9c3f-5b4a8d64425d}" text_color="#000000" function="" tension_protocol="" terminal1="{537f8411-d518-4c92-aed0-17ffdbd5c13e}" usery="160" condsize="1" type="multi" formula="NRST - PUR" cable="" vertirotatetext="270">
+                <segment length="9" orientation="horizontal"/>
+                <segment length="486" orientation="horizontal"/>
+                <segment length="-95" orientation="vertical"/>
+                <segment length="290" orientation="horizontal"/>
+                <segment length="105" orientation="vertical"/>
+                <segment length="-126" orientation="horizontal"/>
+                <segment length="-9" orientation="horizontal"/>
                 <sequentialNumbers/>
             </conductor>
         </conductors>
         <inputs>
-            <input rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="660" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>GND - WHT&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="140"/>
-            <input rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="820" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>SWCLK - GRY&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="110"/>
-            <input rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="688.483" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>" y="148.573"/>
-            <input rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="660" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>5V - RED&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="300"/>
-            <input rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="660" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>GND - BRN&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="310"/>
-            <input rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="820" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>SWDIO - BLK&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="130"/>
-            <input rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" x="460" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>Copyright 2023 by Tanner Swett. This file is released&lt;/span>&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>under the GNU GPL version 3. NO WARRANTY, USE AT&lt;/span>&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>YOUR OWN RISK; see the GNU GPL for more details.&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="620"/>
+            <input y="130" rotation="0" x="820" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>SWDIO - GRY&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
+            <input y="110" rotation="0" x="820" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>SWCLK - BLK&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
+            <input y="148.573" rotation="0" x="688.483" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+            <input y="620" rotation="0" x="460" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>Copyright 2023 by Tanner Swett. This file is released&lt;/span>&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>under the GNU GPL version 3. NO WARRANTY, USE AT&lt;/span>&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>YOUR OWN RISK; see the GNU GPL for more details.&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
+            <input y="300" rotation="0" x="660" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>5V - RED&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
+            <input y="140" rotation="0" x="660" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>GND - WHT&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
+            <input y="310" rotation="0" x="660" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>GND - BRN&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
+            <input y="170" rotation="0" x="820" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:7pt;&quot;>NRST - PUR&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
         </inputs>
     </diagram>
     <collection>
@@ -142,95 +155,133 @@
                 <name lang="da">Importerede elementer</name>
             </names>
             <element name="nucleo-v2.elmt">
-                <definition link_type="simple" type="element" width="250" hotspot_y="55" height="540" hotspot_x="75" version="0.90">
-                    <uuid uuid="{151903c7-6cc2-49e5-ab18-942f1d9f345d}"/>
+                <definition type="element" hotspot_x="75" width="250" version="0.90" height="540" hotspot_y="55" link_type="simple">
+                    <uuid uuid="{ceed13f6-e739-4fac-ad67-1d07ca33d5dd}"/>
                     <names>
                         <name lang="en">Nucleo board (variant 2)</name>
                     </names>
                     <elementInformations/>
                     <informations/>
                     <description>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="60" x="-40" y="-20"/>
-                        <text color="#000000" rotation="0" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN5" x="-45" y="50"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="20" ry="0" height="80" x="-30" y="120"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="20" ry="0" height="100" x="110" y="80"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="20" ry="0" height="150" x="-30" y="210"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="20" ry="0" height="170" x="110" y="190"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="240" ry="0" height="110" x="-70" y="-50"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="240" ry="0" height="420" x="-70" y="60"/>
-                        <text color="#000000" rotation="0" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN9" x="-30" y="370"/>
-                        <text color="#000000" rotation="0" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN10" x="105" y="370"/>
-                        <text color="#000000" rotation="0" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN8" x="-30" y="120"/>
-                        <text color="#000000" rotation="0" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN7" x="110" y="80"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="10" x="-40" y="-20"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="10" x="-30" y="120"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="10" x="110" y="80"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="10" x="-30" y="210"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="10" x="110" y="190"/>
-                        <terminal type="Generic" uuid="{eeaf12bd-6cb8-40d3-8011-ea480e3c936e}" x="-25" y="155" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{eb77f16f-69fb-406f-a2e6-888303e66a81}" x="-35" y="15" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{128b06df-e12b-401e-a7f8-6d652de9775f}" x="-25" y="195" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{da306f93-77f7-4825-aebe-61679f1d71b7}" x="-35" y="-15" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{537f8411-d518-4c92-aed0-17ffdbd5c13e}" x="-35" y="25" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{1e43b062-9054-49ac-9238-65c74e2c4c8c}" x="-35" y="35" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{95484a01-bb21-4809-948b-7b47d7625b70}" x="-25" y="185" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{04b9c83a-fc82-4e5c-9261-b370ba009f6b}" x="-35" y="-5" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{cf9535c8-6e0c-41e8-bffa-8d096331b7f2}" x="-25" y="125" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{5f3f65eb-15a7-43f8-9967-6c90e9042b4d}" x="-35" y="5" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{7b7b7bcd-e327-402d-a180-850ad6a3d00c}" x="-25" y="145" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{7f58b12a-61fd-4f8d-b492-0fdbb659a7f9}" x="-25" y="165" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{1f3692d7-b4c4-4c8b-bd01-8b1621f455a7}" x="-25" y="135" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{daec4b55-c86d-4c71-859a-e25f793af908}" x="-25" y="175" orientation="e" name=""/>
+                        <circle y="182" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <circle y="172" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <circle y="12" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" antialias="false" diameter="6"/>
+                        <circle y="22" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" antialias="false" diameter="6"/>
+                        <circle y="32" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" antialias="false" diameter="6"/>
+                        <rect y="-20" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-40" width="10" antialias="false" rx="0" height="60"/>
+                        <circle y="142" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <circle y="-8" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" antialias="false" diameter="6"/>
+                        <circle y="2" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" antialias="false" diameter="6"/>
+                        <circle y="192" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <text y="50" rotation="0" x="-45" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN5" color="#000000"/>
+                        <circle y="132" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <rect y="120" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30" width="20" antialias="false" rx="0" height="80"/>
+                        <circle y="152" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <rect y="80" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="110" width="20" antialias="false" rx="0" height="100"/>
+                        <rect y="210" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30" width="20" antialias="false" rx="0" height="150"/>
+                        <rect y="190" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="110" width="20" antialias="false" rx="0" height="170"/>
+                        <rect y="-50" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-70" width="240" antialias="false" rx="0" height="110"/>
+                        <rect y="60" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-70" width="240" antialias="false" rx="0" height="420"/>
+                        <text y="370" rotation="0" x="-30" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN9" color="#000000"/>
+                        <text y="370" rotation="0" x="105" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN10" color="#000000"/>
+                        <text y="120" rotation="0" x="-30" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN8" color="#000000"/>
+                        <text y="80" rotation="0" x="110" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN7" color="#000000"/>
+                        <rect y="-20" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-40" width="10" antialias="false" rx="0" height="10"/>
+                        <rect y="120" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30" width="10" antialias="false" rx="0" height="10"/>
+                        <rect y="80" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="110" width="10" antialias="false" rx="0" height="10"/>
+                        <rect y="210" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30" width="10" antialias="false" rx="0" height="10"/>
+                        <rect y="190" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="110" width="10" antialias="false" rx="0" height="10"/>
+                        <circle y="162" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <rect y="-18" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" width="6" antialias="false" rx="0" height="6"/>
+                        <rect y="122" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" width="6" antialias="false" rx="0" height="6"/>
+                        <terminal y="195" type="Generic" uuid="{128b06df-e12b-401e-a7f8-6d652de9775f}" x="-25" orientation="e" name=""/>
+                        <terminal y="125" type="Generic" uuid="{cf9535c8-6e0c-41e8-bffa-8d096331b7f2}" x="-25" orientation="e" name=""/>
+                        <terminal y="135" type="Generic" uuid="{1f3692d7-b4c4-4c8b-bd01-8b1621f455a7}" x="-25" orientation="e" name=""/>
+                        <terminal y="15" type="Generic" uuid="{eb77f16f-69fb-406f-a2e6-888303e66a81}" x="-35" orientation="e" name=""/>
+                        <terminal y="-5" type="Generic" uuid="{04b9c83a-fc82-4e5c-9261-b370ba009f6b}" x="-35" orientation="e" name=""/>
+                        <terminal y="145" type="Generic" uuid="{7b7b7bcd-e327-402d-a180-850ad6a3d00c}" x="-25" orientation="e" name=""/>
+                        <terminal y="155" type="Generic" uuid="{eeaf12bd-6cb8-40d3-8011-ea480e3c936e}" x="-25" orientation="e" name=""/>
+                        <terminal y="35" type="Generic" uuid="{1e43b062-9054-49ac-9238-65c74e2c4c8c}" x="-35" orientation="e" name=""/>
+                        <terminal y="-15" type="Generic" uuid="{da306f93-77f7-4825-aebe-61679f1d71b7}" x="-35" orientation="e" name=""/>
+                        <terminal y="185" type="Generic" uuid="{95484a01-bb21-4809-948b-7b47d7625b70}" x="-25" orientation="e" name=""/>
+                        <terminal y="5" type="Generic" uuid="{5f3f65eb-15a7-43f8-9967-6c90e9042b4d}" x="-35" orientation="e" name=""/>
+                        <terminal y="165" type="Generic" uuid="{7f58b12a-61fd-4f8d-b492-0fdbb659a7f9}" x="-25" orientation="e" name=""/>
+                        <terminal y="175" type="Generic" uuid="{daec4b55-c86d-4c71-859a-e25f793af908}" x="-25" orientation="e" name=""/>
+                        <terminal y="25" type="Generic" uuid="{537f8411-d518-4c92-aed0-17ffdbd5c13e}" x="-35" orientation="e" name=""/>
                     </description>
                 </definition>
             </element>
             <element name="nucleo-v1.elmt">
-                <definition link_type="simple" type="element" width="250" hotspot_y="55" height="540" hotspot_x="75" version="0.90">
-                    <uuid uuid="{d9332f44-d61a-4a3d-a039-a125c777929b}"/>
+                <definition type="element" hotspot_x="75" width="250" version="0.90" height="540" hotspot_y="55" link_type="simple">
+                    <uuid uuid="{1ebedbe3-eda1-4cb7-8594-1f8f4fc29139}"/>
                     <names>
                         <name lang="en">Nucleo board (variant 1)</name>
                     </names>
                     <elementInformations/>
                     <informations/>
                     <description>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="40" x="0" y="-40"/>
-                        <text color="#000000" rotation="0" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN4" x="-5" y="10"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="60" x="-40" y="-20"/>
-                        <text color="#000000" rotation="0" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN5" x="-45" y="50"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="20" ry="0" height="80" x="-30" y="120"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="20" ry="0" height="100" x="110" y="80"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="20" ry="0" height="150" x="-30" y="210"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="20" ry="0" height="170" x="110" y="190"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="240" ry="0" height="110" x="-70" y="-50"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="240" ry="0" height="420" x="-70" y="60"/>
-                        <text color="#000000" rotation="0" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN9" x="-30" y="370"/>
-                        <text color="#000000" rotation="0" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN10" x="105" y="370"/>
-                        <text color="#000000" rotation="0" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN8" x="-30" y="120"/>
-                        <text color="#000000" rotation="0" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN7" x="110" y="80"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="10" x="-40" y="-20"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="10" x="0" y="-40"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="10" x="-30" y="120"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="10" x="110" y="80"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="10" x="-30" y="210"/>
-                        <rect antialias="false" rx="0" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" ry="0" height="10" x="110" y="190"/>
-                        <terminal type="Generic" uuid="{a2c41720-2ed9-42f3-ba11-7e7a8f04739e}" x="5" y="-15" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{405e97bb-681a-425c-8598-0085e490d9bb}" x="5" y="-5" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{fe06c0d8-b9ce-4f2b-9703-36356bda6bfc}" x="5" y="-25" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{24df7436-1a90-4765-b9e9-fccf71a9fe55}" x="5" y="-35" orientation="e" name=""/>
-                        <terminal type="Generic" uuid="{eb77f16f-69fb-406f-a2e6-888303e66a81}" x="-35" y="15" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{537f8411-d518-4c92-aed0-17ffdbd5c13e}" x="-35" y="25" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{5f3f65eb-15a7-43f8-9967-6c90e9042b4d}" x="-35" y="5" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{04b9c83a-fc82-4e5c-9261-b370ba009f6b}" x="-35" y="-5" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{1e43b062-9054-49ac-9238-65c74e2c4c8c}" x="-35" y="35" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{da306f93-77f7-4825-aebe-61679f1d71b7}" x="-35" y="-15" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{1f3692d7-b4c4-4c8b-bd01-8b1621f455a7}" x="-25" y="135" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{7b7b7bcd-e327-402d-a180-850ad6a3d00c}" x="-25" y="145" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{cf9535c8-6e0c-41e8-bffa-8d096331b7f2}" x="-25" y="125" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{eeaf12bd-6cb8-40d3-8011-ea480e3c936e}" x="-25" y="155" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{daec4b55-c86d-4c71-859a-e25f793af908}" x="-25" y="175" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{95484a01-bb21-4809-948b-7b47d7625b70}" x="-25" y="185" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{7f58b12a-61fd-4f8d-b492-0fdbb659a7f9}" x="-25" y="165" orientation="w" name=""/>
-                        <terminal type="Generic" uuid="{128b06df-e12b-401e-a7f8-6d652de9775f}" x="-25" y="195" orientation="w" name=""/>
+                        <circle y="182" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <rect y="-40" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="0" width="10" antialias="false" rx="0" height="40"/>
+                        <circle y="152" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <circle y="32" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-18" antialias="false" diameter="6"/>
+                        <circle y="12" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" antialias="false" diameter="6"/>
+                        <circle y="-18" style="line-style:normal;line-weight:normal;filling:none;color:black" x="2" antialias="false" diameter="6"/>
+                        <circle y="2" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" antialias="false" diameter="6"/>
+                        <circle y="32" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" antialias="false" diameter="6"/>
+                        <circle y="22" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" antialias="false" diameter="6"/>
+                        <rect y="22" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-18" width="6" antialias="false" rx="0" height="6"/>
+                        <circle y="172" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <circle y="-8" style="line-style:normal;line-weight:normal;filling:none;color:black" x="2" antialias="false" diameter="6"/>
+                        <circle y="142" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <text y="10" rotation="0" x="-5" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN4" color="#000000"/>
+                        <circle y="192" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <circle y="-28" style="line-style:normal;line-weight:normal;filling:none;color:black" x="2" antialias="false" diameter="6"/>
+                        <circle y="162" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <rect y="-20" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-40" width="10" antialias="false" rx="0" height="60"/>
+                        <text y="50" rotation="0" x="-50" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN5" color="#000000"/>
+                        <rect y="-38" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="2" width="6" antialias="false" rx="0" height="6"/>
+                        <rect y="120" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30" width="20" antialias="false" rx="0" height="80"/>
+                        <circle y="132" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" antialias="false" diameter="6"/>
+                        <rect y="122" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-28" width="6" antialias="false" rx="0" height="6"/>
+                        <rect y="80" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="110" width="20" antialias="false" rx="0" height="100"/>
+                        <rect y="210" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30" width="20" antialias="false" rx="0" height="150"/>
+                        <rect y="190" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="110" width="20" antialias="false" rx="0" height="170"/>
+                        <rect y="-50" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-70" width="240" antialias="false" rx="0" height="110"/>
+                        <rect y="60" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-70" width="240" antialias="false" rx="0" height="420"/>
+                        <text y="370" rotation="0" x="-30" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN9" color="#000000"/>
+                        <text y="370" rotation="0" x="105" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN10" color="#000000"/>
+                        <text y="120" rotation="0" x="-30" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN8" color="#000000"/>
+                        <text y="80" rotation="0" x="110" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="CN7" color="#000000"/>
+                        <rect y="-20" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-40" width="10" antialias="false" rx="0" height="10"/>
+                        <rect y="-40" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="0" width="10" antialias="false" rx="0" height="10"/>
+                        <rect y="120" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30" width="10" antialias="false" rx="0" height="10"/>
+                        <rect y="80" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="110" width="10" antialias="false" rx="0" height="10"/>
+                        <rect y="210" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30" width="10" antialias="false" rx="0" height="10"/>
+                        <rect y="190" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="110" width="10" antialias="false" rx="0" height="10"/>
+                        <rect y="20" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-20" width="10" antialias="false" rx="0" height="20"/>
+                        <text y="50" rotation="0" x="-20" font="Sans Serif,9,-1,5,50,0,0,0,0,0" text="JP3" color="#000000"/>
+                        <circle y="-8" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" antialias="false" diameter="6"/>
+                        <rect y="-18" ry="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-38" width="6" antialias="false" rx="0" height="6"/>
+                        <terminal y="-35" type="Generic" uuid="{24df7436-1a90-4765-b9e9-fccf71a9fe55}" x="5" orientation="e" name=""/>
+                        <terminal y="155" type="Generic" uuid="{eeaf12bd-6cb8-40d3-8011-ea480e3c936e}" x="-25" orientation="w" name=""/>
+                        <terminal y="185" type="Generic" uuid="{95484a01-bb21-4809-948b-7b47d7625b70}" x="-25" orientation="w" name=""/>
+                        <terminal y="-5" type="Generic" uuid="{04b9c83a-fc82-4e5c-9261-b370ba009f6b}" x="-35" orientation="w" name=""/>
+                        <terminal y="-25" type="Generic" uuid="{fe06c0d8-b9ce-4f2b-9703-36356bda6bfc}" x="5" orientation="e" name=""/>
+                        <terminal y="-15" type="Generic" uuid="{da306f93-77f7-4825-aebe-61679f1d71b7}" x="-35" orientation="w" name=""/>
+                        <terminal y="195" type="Generic" uuid="{128b06df-e12b-401e-a7f8-6d652de9775f}" x="-25" orientation="w" name=""/>
+                        <terminal y="-15" type="Generic" uuid="{a2c41720-2ed9-42f3-ba11-7e7a8f04739e}" x="5" orientation="e" name=""/>
+                        <terminal y="135" type="Generic" uuid="{1f3692d7-b4c4-4c8b-bd01-8b1621f455a7}" x="-25" orientation="w" name=""/>
+                        <terminal y="145" type="Generic" uuid="{7b7b7bcd-e327-402d-a180-850ad6a3d00c}" x="-25" orientation="w" name=""/>
+                        <terminal y="125" type="Generic" uuid="{cf9535c8-6e0c-41e8-bffa-8d096331b7f2}" x="-25" orientation="w" name=""/>
+                        <terminal y="-5" type="Generic" uuid="{405e97bb-681a-425c-8598-0085e490d9bb}" x="5" orientation="e" name=""/>
+                        <terminal y="165" type="Generic" uuid="{7f58b12a-61fd-4f8d-b492-0fdbb659a7f9}" x="-25" orientation="w" name=""/>
+                        <terminal y="35" type="Generic" uuid="{1e43b062-9054-49ac-9238-65c74e2c4c8c}" x="-35" orientation="w" name=""/>
+                        <terminal y="25" type="Generic" uuid="{537f8411-d518-4c92-aed0-17ffdbd5c13e}" x="-35" orientation="w" name=""/>
+                        <terminal y="15" type="Generic" uuid="{eb77f16f-69fb-406f-a2e6-888303e66a81}" x="-35" orientation="w" name=""/>
+                        <terminal y="175" type="Generic" uuid="{daec4b55-c86d-4c71-859a-e25f793af908}" x="-25" orientation="w" name=""/>
+                        <terminal y="35" type="Generic" uuid="{4c2b467b-73ce-41c9-93aa-348065df273a}" x="-15" orientation="e" name=""/>
+                        <terminal y="5" type="Generic" uuid="{5f3f65eb-15a7-43f8-9967-6c90e9042b4d}" x="-35" orientation="w" name=""/>
+                        <terminal y="25" type="Generic" uuid="{c9ee066e-ec50-4f3d-bd56-c61a47ab41f1}" x="-15" orientation="e" name=""/>
                     </description>
                 </definition>
             </element>
