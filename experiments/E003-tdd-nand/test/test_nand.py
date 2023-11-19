@@ -151,7 +151,6 @@ def write_gpio_pin(pyocd_target, pin: GpioPin, value: bool):
 
 
 
-# Use ConnectHelper to connect to our Nucleo L4R5ZI board
 with ConnectHelper.session_with_chosen_probe() as session:
     target = session.target
 
