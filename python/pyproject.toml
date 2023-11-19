@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "clawtoast"
+version = "0.1.0"
+description = ""
+authors = ["Tanner Swett <tannerswett@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
