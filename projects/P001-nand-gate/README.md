@@ -5,8 +5,9 @@ repository.
 
 To try to run the Python test script, do something like this:
 
+    cd projects/P001-nand-gate
     python -m venv .venv
     source .venv/bin/activate       # if you're in bash
     .\.venv\Scripts\Activate.ps1    # if you're in PowerShell
     poetry install --no-root
-    python test/tests.py
+    python -m pytest
