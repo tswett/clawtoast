@@ -3,11 +3,19 @@ from __future__ import annotations
 from dataclasses import dataclass
 from enum import Enum
 from types import TracebackType
-from typing import Any, Optional, Type
+from typing import Optional, Sequence
 
+from pyocd.core.helpers import ConnectHelper
 from pyocd.core.session import Session
+from pyocd.core.soc_target import SoCTarget
 
 class NucleoBoard:
+    session_context_manager: Session
+    session: Optional[Session]
+    # TODO: In practice, session_context_manager and session have the same
+    # value; do we need both of them?
+    target: Optional[SoCTarget]
+
     def __init__(self, session_context_manager: Session):
         self.session_context_manager = session_context_manager
         self.session = None
@@ -19,14 +27,15 @@ class NucleoBoard:
 
         return self
 
-    def __exit__(self, exc_type: object, exc_val: object, exc_traceback: object):
+    def __exit__(self, exc_type: Optional[type], exc_val: object, exc_traceback: Optional[TracebackType]):
         self.session_context_manager.__exit__(exc_type, exc_val, exc_traceback)
 
     @property
     def gpio(self) -> GpioReference:
         return GpioReference(self)
 
-    def read_memory_block32(self, address: int, words: int) -> list[int]:
+    def read_memory_block32(self, address: int, words: int) -> Sequence[int]:
+        assert self.target is not None
         return self.target.read_memory_block32(address, words)
 
 class GpioReference:
@@ -46,16 +55,18 @@ class GpioReference:
         return info
 
 class GpioInfo:
+    dict: dict[GpioPin, GpioPinInfo]
+
     def __init__(self):
         self.dict = {}
 
-    def __getitem__(self, pin) -> GpioPinInfo:
+    def __getitem__(self, pin: GpioPin | str) -> GpioPinInfo:
         if isinstance(pin, str):
             pin = GpioPin[pin]
 
         return self.dict[pin]
 
-    def __setitem__(self, pin, value: GpioPinInfo) -> None:
+    def __setitem__(self, pin: GpioPin | str, value: GpioPinInfo) -> None:
         if isinstance(pin, str):
             pin = GpioPin[pin]
 
@@ -110,10 +121,12 @@ class GpioPin(metaclass=GpioPinMeta):
     def __hash__(self):
         return hash((self.port, self.number))
 
-def connect_to_nucleo(connect_helper = None) -> NucleoBoard:
+def connect_to_nucleo(connect_helper: Optional[type[ConnectHelper]] = None) -> NucleoBoard:
     if connect_helper is None:
-        from pyocd.core.helpers import ConnectHelper
         connect_helper = ConnectHelper
+        assert connect_helper is not None
 
     session_context_manager = connect_helper.session_with_chosen_probe()
+    assert session_context_manager is not None
+
     return NucleoBoard(session_context_manager)

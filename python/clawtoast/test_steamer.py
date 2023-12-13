@@ -1,7 +1,7 @@
 from collections import defaultdict
 import pytest
 import random
-from typing import Any
+from typing import Any, Generator
 
 from clawtoast import steamer
 from clawtoast.steamer import GpioMode, GpioPort, NucleoBoard
@@ -49,6 +49,7 @@ class ConnectHelperMock:
     def session_with_chosen_probe(self):
         return SessionContextManagerMock(self.nucleo_mock)
 
+# TODO: I think we can combine SessionContextManagerMock and SessionMock
 class SessionContextManagerMock:
     def __init__(self, nucleo_mock: NucleoMock):
         self.nucleo_mock = nucleo_mock
@@ -56,7 +57,7 @@ class SessionContextManagerMock:
     def __enter__(self):
         return SessionMock(self.nucleo_mock)
 
-    def __exit__(self, type, value, traceback):
+    def __exit__(self, type: object, value: object, traceback: object):
         pass
 
 class SessionMock:
@@ -72,7 +73,7 @@ class TargetMock:
         self.nucleo_mock = nucleo_mock
 
     def read_memory_block32(self, address: int, words: int) -> list[int]:
-        result = []
+        result: list[int] = []
 
         for n in range(words):
             value = (
@@ -90,18 +91,18 @@ def nucleo_mock() -> NucleoMock:
     return NucleoMock()
 
 @pytest.fixture
-def connect_helper(nucleo_mock):
+def connect_helper(nucleo_mock: NucleoMock) -> ConnectHelperMock:
     return ConnectHelperMock(nucleo_mock)
 
-def test_can_run_connect_to_nucleo(connect_helper) -> None:
+def test_can_run_connect_to_nucleo(connect_helper: ConnectHelperMock) -> None:
     steamer.connect_to_nucleo(connect_helper)
 
-def test_can_use_with_with_connect_to_nucleo(connect_helper) -> None:
-    with steamer.connect_to_nucleo(connect_helper) as nucleo:
+def test_can_use_with_with_connect_to_nucleo(connect_helper: ConnectHelperMock) -> None:
+    with steamer.connect_to_nucleo(connect_helper):
         pass
 
 @pytest.fixture
-def nucleo(connect_helper) -> NucleoBoard:
+def nucleo(connect_helper: ConnectHelperMock) -> Generator[NucleoBoard, None, None]:
     with steamer.connect_to_nucleo(connect_helper) as nucleo:
         yield nucleo
 
