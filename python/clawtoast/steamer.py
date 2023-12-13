@@ -2,9 +2,13 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from enum import Enum
+from types import TracebackType
+from typing import Any, Optional, Type
+
+from pyocd.core.session import Session
 
 class NucleoBoard:
-    def __init__(self, session_context_manager):
+    def __init__(self, session_context_manager: Session):
         self.session_context_manager = session_context_manager
         self.session = None
         self.target = None
@@ -15,8 +19,8 @@ class NucleoBoard:
 
         return self
 
-    def __exit__(self, type, value, traceback):
-        self.session_context_manager.__exit__(type, value, traceback)
+    def __exit__(self, exc_type: object, exc_val: object, exc_traceback: object):
+        self.session_context_manager.__exit__(exc_type, exc_val, exc_traceback)
 
     @property
     def gpio(self) -> GpioReference:
